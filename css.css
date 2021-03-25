@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+  overflow: hidden;
+
+}
+.poleyoutube {
+  height: 24%;
+  width: 99%;
+  overflow: auto;
+  font-size: 7.4vw;
+  text-align: center;
+  background: white;
+  box-shadow: -4px 4px 16px #000;
+  margin: 4px;
+}
+.youtube {
+  height: 75%;
+  width: 94%;
+  background: none;
+  position: absolute;
+  overflow: auto;
+  top: 15%;
+}
+
+.setting {
+  height: 75%;
+  width: 100%;
+  background: #F8F8FF;
+  overflow: hidden;
+  box-shadow: 4px 4px 44px #000;
+  border-radius: 14vw;
+  border-top-right-radius: 0;
+  opacity: 0.844;
+  display: flex;
+  position: absolute;
+  top: 125%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+.options {
+  padding: 4%;
+  animation-name: ;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  display: flex;
+  position: absolute;
+  left:calc(25% - 14vw);
+  font-size: 14vw;
+}
+@keyframes second {
+
+
+      from {transform:rotateY(180deg);}
+      to {transform:rotateY(0deg);}
+}
+@keyframes first {
+
+
+      from {transform:rotateY(0deg);}
+      to {transform:rotateY(180deg);}
+}
+.wrap {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone {
+
+
+
+
+  border-radius: 14vw;
+  height: 84%;
+  width: 84%;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: -4px -4px 44px white;
+  background-size: 100%;
+  position: relative;
+  font-size: 10vw;
+  text-align: center;
+  text-decoration: underline;
+  transform-origin: center bottom;
+  background: white;
+  display: flex;
+  transform:
+}
+
+.text {
+  position: absolute;
+  top:54%;
+}
+.form-label {
+   /*display: flex*/
+}
+.autor {
+  position: absolute;
+  top:84%;
+}
+.heart {
+  position: absolute;
+  height: 14%;
+  left: calc(4%);
+  margin: 4vw;
+  width: 14%;
+  font-size: 14vw;
+  color: red;
+}
+@keyframes card {
+    0% {transform: translateY(0);}
+    5% {transform: translateY(-14vw);}
+    100% {transform: translateY(0);}
+}
+#first-heart {
+  display: block;
+}
+#second-heart {
+  display: none
+}
+#thirt-heart {
+  display: none
+}
+.container {
+  display: none
+}
+#select_genre {
+  height: 4.4vh;
+  width: 50vw;
+  background: white;
+  box-shadow: 4px 4px 4px grey;
+  color: none;
+  font-size: 44vw;
+  position: absolute;
+  left: calc(50% - 25vw);
+}

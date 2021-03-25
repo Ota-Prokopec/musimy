@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/f9631ea83e.js" crossorigin="anonymous"></script>
+    <script src="js.js" defer charset="utf-8"></script>
+    <script src="createElement.js" charset="utf-8"></script>
+    <script src="heart.js" defer charset="utf-8"></script>
+    <script src="setting.js" defer charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="play.js"defer charset="utf-8"></script>
+    <script src="ovladani.js" charset="utf-8"></script>
+    <script src="music.js" charset="utf-8"></script>
+    <script  src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="youtube.js" defer charset="utf-8"></script>
+    <script src="song.js" defer charset="utf-8"></script>
+    <script src="obrazek.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+       <div id="wrap" class="wrap">
+
+         <div id="card" class="phone">
+
+           <div id="write" class="text"></div>
+           <div id="author" class="autor"></div>
+
+
+           <div id="heart" class="heart">
+             <i id="first-heart" class="far fa-heart"></i>
+             <i id="second-heart" class="fas fa-heart"></i>
+             <i id="thirt-heart" class="fas fa-heart-broken"></i>
+           </div>
+
+           <div id="setting" class="setting">
+
+             <div id="select" class="col-sm-6 form-group row mt-4 px-0">
+                 <label for="Genre" class="form-label col-sm-2">choise your music</label>
+                 <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
+                     <option>Select...</option>
+                 </select>
+             </div>
+
+             <div id="youtube" class="youtube">
+
+
+
+             </div>
+
+           </div>
+
+         </div>
+
+       </div>
+
+
+
+
+
+
+        <form action="">
+            <input type="hidden" id='hidden_token'>
+
+            <div class="container">
+
+
+
+              <div class="col-sm-6 form-group row px-0">
+                  <label for="Genre" class="form-label col-sm-2">Playlists:</label>
+                  <select name="" id="select_playlist" class="form-control form-control-sm col-sm-10">
+                      <option>Select...</option>
+                  </select>
+              </div>
+              <div class="col-sm-6 row form-group px-0">
+                  <button type="submit" id="btn_submit" class="btn btn-success col-sm-12">Search</button>
+              </div>
+          </form>
+          <div class="row">
+              <div class="col-sm-6 px-0">
+                  <div id="song" class="list-group song-list">
+
+                  </div>
+              </div>
+              <div class="offset-md-1 col-sm-4" id="song-detail">
+              </div>
+          </div>
+
+            </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
