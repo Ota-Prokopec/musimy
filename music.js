@@ -5,9 +5,8 @@ function playm(value) {
 
   if (value) {
     //start
-    console.log("start");
     if (audio !== undefined) {
-      audio.play();
+      startForTwo();
     }
     else {
       clicking();
@@ -16,7 +15,6 @@ function playm(value) {
   }
   else {
     //  stop
-    console.log("stop");
     if (audio !== undefined) {
       audio.pause();
     }

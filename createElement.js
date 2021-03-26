@@ -11,7 +11,6 @@
 
   function createElementByTagName(tagName, object,   ...el) {
       const element = document.createElement(tagName);
-      console.log(el);
       for (const [key, value] of Object.entries(object)) {
         if (key === "name" || key === "type" || key === "class" || key === "id" || key === "aria-role" || key === "aria-label" || key === "href") {
                 element.setAttribute(key, value);
@@ -40,7 +39,6 @@
 
 
 function appendElement(to, ...element) {
-  console.log(to);
   const temp = document.createDocumentFragment();
   for (let pos = 0; pos < element.length; pos++) {
          temp.appendChild(element[pos]);

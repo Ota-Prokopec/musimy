@@ -20,13 +20,12 @@ heart.addEventListener("click", function () {
 
         none();
         document.getElementById("second-heart").style.display = "block"
-        console.log(thisMusic);
 
 
         let canI = true;
-        for (let pos = 0; pos < array.length; pos ++) {
+        for (const [key, value] of Object.entries(database)) {
 
-          if (array[pos].uri === thisMusic.uri) {
+          if (key === thisMusic.uri && value !== undefined) {
             canI = false;
 
           }
@@ -38,9 +37,17 @@ heart.addEventListener("click", function () {
               array.push(thisMusic);
 
 
-              const element = Ota.createElementByTagName("div", {class:"poleyoutube"}, Ota.createElementByTagName("a", {href:thisMusic.uri}, `${thisMusic.name}`));
+                   //element to setting
+                   //from heart in onreload.js
+                const element = doelementtosetting(thisMusic);
 
-              appendElement(document.getElementById("youtube"), element)
+
+              // give to database
+
+              console.log(element);
+              database[thisMusic.uri] = element.innerText;
+              //  to local storage
+              givelocal();
             }
 
 

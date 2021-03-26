@@ -187,7 +187,6 @@ const APPController = (function(UICtrl, APICtrl) {
 
     // create genre change event listener
     DOMInputs.genre.addEventListener('change', async () => {
-      console.log("event");
 
 
         //reset the playlist
@@ -285,7 +284,6 @@ APPController.init();
                                   const random1 = Math.floor(Math.random()*second.length)
 
                                   second[random1].selected = true;
-                                  console.log(second[random1]);
                                 }, 14);
 
 /////////////////////////
@@ -309,15 +307,13 @@ APPController.init();
 
                              if (song[random] !== undefined || song[random] !== null) {
 
-                               console.log(random, song);
                                song[random].click();
 
                              }
 
-                             console.log(song);
 
 
-                           }, 444)
+                           }, 644)
 
                      }
 
@@ -335,7 +331,6 @@ APPController.init();
                       audio = new Audio(track.preview_url);
                       thisMusic = {name:track.album.name, uri:track.external_urls.spotify };
                       startForTwo();
-                      console.log(track);
 
 
 
@@ -350,13 +345,18 @@ APPController.init();
 
                    function startForTwo() {
 
-                     const myPromise = new Promise((resolve, reject) => {
+                             /*const myPromise = new Promise((resolve, reject) => {
 
-                       const prom = audio.play();
+                               audio.play();
 
-                   })
+                           })*/
 
-                  myPromise.then(() => {
+                           setTimeout(() => {
+                             audio.play();
+                           },144);
+
+
+                  /*myPromise.then(() => {
                     audio.play();
-                  })
+                  })*/
                 }

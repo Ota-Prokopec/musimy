@@ -16,7 +16,6 @@ const card = document.getElementById("card");
        function start () {
 
 
-             console.log("click  ");
         touchpositionX = event.touches[0].clientX;
         touchpositionY = event.touches[0].clientY;
 
@@ -53,7 +52,6 @@ const card = document.getElementById("card");
               if (event.srcElement === card) {
 
                 card.style.transform = `rotate(${(event.touches[0].clientX - touchpositionX)/44}deg)`;
-                console.log();
                 card.style.left = `${(event.touches[0].clientX - touchpositionX)/8.44}px`;
                 card.style.top = `${(event.touches[0].clientY - touchpositionY)/8.44}px`;
 

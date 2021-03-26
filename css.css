@@ -10,6 +10,7 @@ body {
   width: 99%;
   overflow: auto;
   font-size: 7.4vw;
+  position: absolute;
   text-align: center;
   background: white;
   box-shadow: -4px 4px 16px #000;
@@ -103,7 +104,7 @@ body {
   top:54%;
 }
 .form-label {
-   /*display: flex*/
+   display: flex
 }
 .autor {
   position: absolute;
